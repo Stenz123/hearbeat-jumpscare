@@ -1,14 +1,14 @@
 import {BehaviorSubject} from "rxjs";
 
 export interface Model {
-  heartRate?: number;
+  heartRates?: number[];
   restingHeartRate?: number;
   maxAboveRestMultiplier?: number;
   isAboveMax?: boolean;
 }
 
 const initialState: Model = {
-    heartRate: 0,
+    heartRates: [0],
     restingHeartRate: 80,
     maxAboveRestMultiplier: 1.25,
     isAboveMax: false

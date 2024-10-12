@@ -51,19 +51,6 @@ const config = {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|mp3)$/i,
                 use: 'file-loader?name=./assets/[name].[ext]',
             },
-            {
-                test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]',
-                            context: 'src', // Prevents the full path from being included in the output
-                            outputPath: 'assets', // Output directory for images
-                        },
-                    },
-                ],
-            },
         ],
     },
     resolve: {

@@ -11,7 +11,10 @@ export async function fetchHeartRate() {
       })
       .then(data => {
         let next = produce(store.getValue(), (draft) => {
-          draft.heartRate = data.heart_rate;
+          draft.heartRates.push(data.heart_rate);
+          if (draft.heartRates.length > 10) {
+            draft.heartRates.shift();
+          }
         });
         store.next(next);
 

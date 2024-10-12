@@ -31,7 +31,6 @@
     "workbox-webpack-plugin": "^7.1.0"
   },
   "dependencies": {
-    "file-loader": "^6.2.0",
     "immer": "^10.1.1",
     "lit-html": "^3.2.0",
     "rxjs": "^7.8.1"
