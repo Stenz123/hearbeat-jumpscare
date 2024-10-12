@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+      "module": "esnext",
+      "target": "es2018",
+      "outDir": "dist",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "importHelpers": true,
+      "sourceMap": true,
+      "inlineSources": true,
+  },
+  "files": ["src/index.ts"]
+}
